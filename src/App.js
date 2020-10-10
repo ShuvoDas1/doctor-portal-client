@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import {
@@ -9,14 +8,24 @@ import {
  
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
+import Appointment from './components/Appointment/Appointment/Appointment';
+import NotFound from './components/NotFound/NotFound';
+
+
 
 function App() {
   return (
     <div>
       <Router>
         <Switch>
-          <Route path='/'>
+          <Route exact  path='/'>
             <Home></Home>
+          </Route>
+          <Route path='/appointment'>
+            <Appointment></Appointment>
+          </Route>
+          <Route path='*'>
+            <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>

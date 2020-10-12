@@ -42,8 +42,8 @@ const AddDoctor = () => {
                     <input onBlur={handleBlur} type="email" class="form-control" name="email" placeholder="Enter email" />
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input onBlur={handleBlur} type="password" class="form-control" name='name' placeholder="Password" />
+                    <label for="name">Name</label>
+                    <input onBlur={handleBlur} type="name" class="form-control" name='name' placeholder="Name" />
                 </div>
                 <div class="form-group">
                     <input onChange={handleFile} type="file" name='file' class="form-control-file" id="exampleFormControlFile1" />

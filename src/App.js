@@ -12,6 +12,7 @@ import Appointment from './components/Appointment/Appointment/Appointment';
 import NotFound from './components/NotFound/NotFound';
 import Login from './components/Login/Login';
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
+import AddDoctor from './components/AddDoctor/AddDoctor';
 
 export const userContext = createContext();
 
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path='/dashboard/appointments'>
             <Dashboard></Dashboard>
+          </Route>
+          <Route path='/dashboard/addDoctor'>
+            <AddDoctor></AddDoctor>
           </Route>
           <Route path='*'>
             <NotFound></NotFound>
